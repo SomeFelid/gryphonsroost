@@ -8,7 +8,26 @@
 		<title>{{ pageTitle }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 
+    <!-- Style -->
+    <style>
+      :root {
+        --color: {{ metadata.color }};
+        --font-family-header:
+          {% if metadata.fonts.header %}{{ metadata.fonts.header }},{% endif %}
+          {{ metadata.fonts.headerFallback }};
+        --font-family-body:
+          {% if metadata.fonts.body %}{{ metadata.fonts.body }},{% endif %}
+          {{ metadata.fonts.bodyFallback }};
+      }
+    </style>
     <link href="/css/main.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    {% if metadata.fonts.header or metadata.fonts.body %}
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="{{ metadata.fonts | fontString }}" rel="stylesheet">
+    {% endif %}
   </head>
 	<body>
     {% include "header.njk" %}

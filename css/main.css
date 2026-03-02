@@ -1,11 +1,22 @@
 :root {
 	color-scheme: light dark;
 
-	--color-dark: #333333;
-	--color-light: #cccccc;
+	--color: #0000ff;
+
+	--color-dark: hsl(from var(--color) h 50 7);
+	--color-light: hsl(from var(--color) h 50 93);
+
+	--color-dark-alt: hsl(from var(--color) h 50 10);
+	--color-light-alt: hsl(from var(--color) h 50 90);
+
+	--color-accent-dark: hsl(from var(--color) h 85 20);
+	--color-accent-light: hsl(from var(--color) h 85 80);
 
 	--color-text: light-dark(var(--color-dark), var(--color-light));
+	--color-text-alt: light-dark(var(--color-dark-alt), var(--color-light-alt));
 	--color-bg: light-dark(var(--color-light), var(--color-dark));
+	--color-bg-alt: light-dark(var(--color-light-alt), var(--color-dark-alt));
+	--color-accent: light-dark(var(--color-accent-dark), var(--color-accent-light));
 }
 
 * {
@@ -17,4 +28,87 @@
 body {
 	color: var(--color-text);
 	background-color: var(--color-bg);
+	font-family: var(--font-family-body);
+	width: 60vw;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+@media (max-width: 1050px) {
+	body {
+		width: 75vw;
+	}
+}
+
+@media (max-width: 650px) {
+	body {
+		width: 92vw;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.5;
+	color: var(--color-text-alt);
+	font-family: var(--font-family-header);
+	margin-top: .8em;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.65rem; }
+h5 { font-size: 1.4rem; }
+h6 { font-size: 1.25rem; }
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border-radius: .25rem;
+	margin: 1rem 0;
+}
+
+main p {
+	--line-height: 1.5;
+	--font-size: 1rem;
+	padding: 0 1rem;
+}
+
+main ul, main ol {
+	padding: 0 1rem 0 3rem;
+	--line-height: 1.5;
+	--font-size: 1rem;
+}
+
+main p,
+main ul, main ol {
+	background-color: var(--color-bg-alt);
+	line-height: var(--line-height);
+	font-size: var(--font-size);
+	background-image: repeating-linear-gradient(transparent, transparent calc(var(--line-height) * var(--font-size) - 1px), hsl(from var(--color-accent) h s l / 50%) calc(var(--line-height) * var(--font-size) - 1px), hsl(from var(--color-accent) h s l / 50%) 100%);
+	background-clip: border-box;
+	background-position: 0 calc(0px - var(--line-height) * var(--font-size) / 6);
+	background-size: 1px calc(var(--line-height) * var(--font-size));
+	padding-top: calc(var(--line-height) * var(--font-size));
+	padding-bottom: calc(var(--line-height) * var(--font-size));
+}
+
+p + p,
+p + ul, p + ol {
+	padding-top: 0;
+}
+
+a {
+	color: var(--color-text);
+	text-decoration-color: var(--color-accent);
+	text-decoration-thickness: .1em;
+}
+
+hr {
+	margin: 2rem 5rem;
+	color: var(--color-accent);
+}
+
+pre {
+	margin: 1rem;
 }
