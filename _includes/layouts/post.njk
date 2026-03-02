@@ -1,16 +1,16 @@
 ---
-layout: base.njk
+layout: page.njk
 ---
-
-<p>
-  posted on
-  <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate("America/Los_Angeles") }}</time>
-  by {{ author or metadata.author }}
-</p>
 
 {% if hero.image and hero.alt %}
   <img src="{{ hero.image }}" alt="{{ hero.alt }}">
 {% endif %}
+
+<p class="post-date">
+  posted on
+  <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate("America/Los_Angeles") }}</time>
+  by {{ author or metadata.author }}
+</p>
 
 {% set relevantTags = tags | removeBasicTags %}
 {% if relevantTags.length %}
@@ -23,4 +23,5 @@ layout: base.njk
   {% endfor %}
 </ul>
 {% endif %}
+
 {{ content | safe }}

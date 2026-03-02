@@ -76,6 +76,50 @@ export default defineConfig({
 						]
 					},
 					{
+						name: "fonts",
+						label: "Site fonts",
+						type: "object",
+						required: true,
+						fields: [
+							{
+								name: "header",
+								label: "Header font",
+								type: "string",
+							},
+							{
+								name: "headerFallback",
+								label: "Header fallback font",
+								type: "string",
+								required: true,
+								options: [
+									{ label: "serif", value: "serif" },
+									{ label: "sans serif", value: "sans-serif" }
+								],
+								ui: {
+									component: "radio-group"
+								}
+							},
+							{
+								name: "body",
+								label: "Body font",
+								type: "string",
+							},
+							{
+								name: "bodyFallback",
+								label: "Body fallback font",
+								type: "string",
+								required: true,
+								options: [
+									{ label: "serif", value: "serif" },
+									{ label: "sans serif", value: "sans-serif" }
+								],
+								ui: {
+									component: "radio-group"
+								}
+							},
+						]
+					},
+					{
 						name: "topNav",
 						label: "Header navigation",
 						type: "object",
@@ -101,7 +145,7 @@ export default defineConfig({
 								type: "string"
 							}
 						]
-					}
+					},
 				]
 			},
       {

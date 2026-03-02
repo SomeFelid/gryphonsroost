@@ -8,7 +8,7 @@ export default async function(eleventyConfig) {
 	/* Tag pagination */
 	eleventyConfig.addCollection("tagPagination", function(collection) {
 		let tagSet = new Set(collection.getAllSorted().flatMap((post) => post.data.tags || []));
-		tagSet = tagSet.difference(new Set(["posts", "gallery", "reference"]));
+		tagSet = tagSet.difference(new Set(["posts"]));
 
 		let paginationSize = 20;
 		let tagMap = [];

@@ -5,6 +5,12 @@
     "url": "https://example.com",
     "author": "author"
   },
+  "fonts": {
+    "header": "Montserrat",
+    "headerFallback": "serif",
+    "body": "Roboto Condensed",
+    "bodyFallback": "sans-serif"
+  },
   "topNav": [
     {
       "title": "about",
@@ -18,5 +24,6 @@
       "title": "blog",
       "link": "/blog"
     }
-  ]
+  ],
+  "color": "#00FFFF"
 }
