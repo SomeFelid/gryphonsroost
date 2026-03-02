@@ -68,34 +68,18 @@ img {
 	margin: 1rem 0;
 }
 
+main p,
+main ul, main ol {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
 main p {
-	--line-height: 1.5;
-	--font-size: 1rem;
 	padding: 0 1rem;
 }
 
 main ul, main ol {
 	padding: 0 1rem 0 3rem;
-	--line-height: 1.5;
-	--font-size: 1rem;
-}
-
-main p,
-main ul, main ol {
-	background-color: var(--color-bg-alt);
-	line-height: var(--line-height);
-	font-size: var(--font-size);
-	background-image: repeating-linear-gradient(transparent, transparent calc(var(--line-height) * var(--font-size) - 1px), hsl(from var(--color-accent) h s l / 50%) calc(var(--line-height) * var(--font-size) - 1px), hsl(from var(--color-accent) h s l / 50%) 100%);
-	background-clip: border-box;
-	background-position: 0 calc(0px - var(--line-height) * var(--font-size) / 6);
-	background-size: 1px calc(var(--line-height) * var(--font-size));
-	padding-top: calc(var(--line-height) * var(--font-size));
-	padding-bottom: calc(var(--line-height) * var(--font-size));
-}
-
-p + p,
-p + ul, p + ol {
-	padding-top: 0;
 }
 
 a {
