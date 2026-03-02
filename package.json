@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "rm -rf _live && npx tinacms dev -c \"npx @11ty/eleventy --serve --quiet --output _live\""
+    "start": "rm -rf _live && npx tinacms dev -c \"npx @11ty/eleventy --serve --quiet\"",
+		"build": "tinacms build && npx @11ty/eleventy --quiet"
   },
   "keywords": [],
   "author": "",
