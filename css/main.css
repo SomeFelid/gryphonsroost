@@ -106,18 +106,31 @@ main ul, main ol {
 
 a {
 	color: var(--color-text);
+}
+
+main a,
+footer a {
 	text-underline-offset: var(--underline-thickness);
 	text-decoration-thickness: var(--underline-thickness);
 	transition: text-decoration-thickness .5s;
 }
 
 @media (any-hover: hover) {
-	a:hover {
+	main a:hover,
+	footer a:hover {
 		text-decoration-thickness: calc(var(--underline-thickness) * 1.8);
 	}
 }
 
-a:active {
+main a:focus-visible,
+footer a:focus-visible {
+	text-decoration: none;
+	outline: .1rem solid var(--color-text);
+	border-radius: .05rem;
+}
+
+main a:active,
+footer a:active {
 	text-decoration-thickness: calc(var(--underline-thickness) * 1.8);
 }
 
