@@ -1,6 +1,6 @@
 export default {
 	permalink: function ({ title }) {
-		return `/${this.slugify(title)}/index.html`;
+		return `/${this.slugify(title)}/`;
 	},
 	layout: "page.njk"
 };
