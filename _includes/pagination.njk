@@ -1,0 +1,20 @@
+{% if olderHref or newerHref %}
+<nav aria-label="pagination">
+  <ol class="pagination {% if inPost %}post-pagination{% endif %}">
+    {% if olderHref %}
+    <li class="older">
+      <a href="{{ olderHref }}">
+        {{ olderTitle or "older" }}
+      </a>
+    </li>
+    {% endif %}
+    {% if newerHref %}
+    <li class="newer">
+      <a href="{{ newerHref }}">
+        {{ newerTitle or "newer" }}
+      </a>
+    </li>
+    {% endif %}
+  </ol>
+</nav>
+{% endif %}

@@ -9,3 +9,8 @@ layout: listpage.njk
 ---
 
 {% include "postlist.njk" %}
+
+{# idk why these are backwards either #}
+{% set newerHref = pagination.href.previous %}
+{% set olderHref = pagination.href.next %}
+{% include "pagination.njk" %}

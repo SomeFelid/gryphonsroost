@@ -1,5 +1,6 @@
 header ul,
-footer ul {
+footer ul,
+.pagination {
 	list-style: none;
 	display: flex;
 }
@@ -161,4 +162,19 @@ footer ul {
 		gap: 0;
 		text-align: center;
 	}
+}
+
+.pagination {
+	font-family: var(--font-family-header);
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+}
+
+.older::before {
+	content: "←" / "";
+}
+
+.newer::after {
+	content: "→" / "";
 }
