@@ -15,9 +15,9 @@
 			hsl(from var(--color-text) h s l / 30%) calc(1.5rem - 1px),
 			hsl(from var(--color-text) h s l / 30%) 100%);
 	background-clip: border-box;
-	background-position: 0 calc(-3px - 1.5rem / 6);
+	background-position: 0 calc(-4px - 1.5rem / 6);
 	background-size: 1px 1.5rem;
-	padding-bottom: 1rem;
+	padding: 1rem;
 	margin: 1rem 0;
 }
 
@@ -40,8 +40,8 @@
 .post h2 {
 	font-size: 2rem;
 	background-color: transparent;
-	padding-top: 0;
-	padding-bottom: calc(1.5rem - 4px);
+	padding: .5rem 0 calc(1.5rem - 4px);
+	margin: 0;
 	grid-area: h2;
 }
 
