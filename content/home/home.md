@@ -7,4 +7,3 @@ hero:
   alt: 'gryphon logo, showing two gryphons on a green field, one holding a piece of paper and one holding a pen'
 ---
 
-welcome to my cool website :)

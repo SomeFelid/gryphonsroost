@@ -9,6 +9,7 @@ pagination:
 eleventyComputed:
   permalink: /{% if pagination.pageNumber %}{{ pagination.pageNumber }}/{% endif %}
 ---
+{% css %}{% include "css/home.css" %}{% endcss %}
 
 <h2 class="subtitle">{{ subtitle }}</h2>
 
@@ -18,6 +19,6 @@ eleventyComputed:
 
 {{ content | safe }}
 
-<h2>Highlights</h2>
+<h2 class="highlights-header">Highlights</h2>
 
 {% include "postlist.njk" %}
