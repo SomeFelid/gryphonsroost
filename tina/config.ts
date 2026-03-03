@@ -7,7 +7,7 @@ const branch =
   process.env.VERCEL_GIT_COMMIT_REF ||
   process.env.HEAD ||
   "main";
-const dateTime = DateTime.now();
+const currentTime = DateTime.now();
 
 export default defineConfig({
   branch,
@@ -227,7 +227,7 @@ export default defineConfig({
         path: "content/posts",
 				defaultItem: () => {
 					return {
-						date: dateTime, // defined at top of file
+						date: currentTime, // defined at top of file
 					}
 				},
 				fields: [
