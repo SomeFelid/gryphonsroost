@@ -57,6 +57,17 @@
 	column-gap: 1rem;
 }
 
+@media (max-width: 650px) {
+	.post a:has(img) {
+		grid-template-areas:
+			"date"
+			"h2"
+			"desc"
+			"img";
+		grid-template-columns: auto;
+	}
+}
+
 .post h2 {
 	font-size: 2rem;
 	background-color: transparent;
@@ -72,8 +83,15 @@
 }
 
 .post .description {
-	padding: 0 1rem 0 2rem;
+	padding: 0;
+	padding-left: 2rem;
 	grid-area: desc;
+}
+
+@media (max-width: 650px) {
+	.post .description {
+		padding: 0;
+	}
 }
 
 .post img {
