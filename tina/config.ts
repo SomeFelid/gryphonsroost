@@ -119,62 +119,6 @@ export default defineConfig({
 							},
 						]
 					},
-					{
-						name: "topNav",
-						label: "Header navigation",
-						type: "object",
-						list: true,
-						ui: {
-							itemProps: (item) => {
-								return {
-									label: item.title
-								};
-							},
-						},
-						fields: [
-							{
-								name: "title",
-								label: "Title for nav item",
-								required: true,
-								type: "string",
-							},
-							{
-								name: "link",
-								label: "Link for nav item",
-								description: "Please include a trailing slash (e.g. '/about/' rather than '/about')",
-								required: true,
-								type: "string"
-							}
-						]
-					},
-					{
-						name: "bottomNav",
-						label: "Footer navigation",
-						type: "object",
-						list: true,
-						ui: {
-							itemProps: (item) => {
-								return {
-									label: item.title
-								};
-							},
-						},
-						fields: [
-							{
-								name: "title",
-								label: "Title for nav item",
-								required: true,
-								type: "string",
-							},
-							{
-								name: "link",
-								label: "Link for nav item",
-								description: "Please include a trailing slash (e.g. '/about/' rather than '/about')",
-								required: true,
-								type: "string"
-							}
-						]
-					},
 				]
 			},
       {

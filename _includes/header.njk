@@ -7,16 +7,18 @@
 
   <div class="folder-background"></div>
 
-  {% if metadata.topNav.length %}
   <nav aria-label="main navigation">
     <ul>
-      {% for item in metadata.topNav %}
-        <li><a href="{{ item.link }}"
-          {% if item.link == page.url %}aria-current="page"{% endif %}>
-          {{ item.title }}</a></li>
-      {% endfor %}
+      <li><a href="/about/"
+        {% if "/about/" == page.url %}aria-current="page"{% endif %}>
+        about</a></li>
+      <li><a href="/blog/"
+        {% if "/blog/" == page.url %}aria-current="page"{% endif %}>
+        blog</a></li>
+      <li><a href="/contact/"
+        {% if "/contact/" == page.url %}aria-current="page"{% endif %}>
+        contact</a></li>
     </ul>
   </nav>
-  {% endif %}
 
 </header>

@@ -1,13 +1,14 @@
 <footer>
-  {% if metadata.bottomNav.length %}
   <nav aria-label="footer navigation">
     <ul>
-      {% for item in metadata.bottomNav %}
-        <li><a href="{{ item.link }}"
-          {% if item.link == page.url %}aria-current="page"{% endif %}>
-          {{ item.title }}</a></li>
-      {% endfor %}
+      <li><a href="/attribution/"
+        {% if "/attribution/" == page.url %}aria-current="page"{% endif %}>
+        attribution</a></li>
+      <li><a href="/"
+        {% if "/" == page.url %}aria-current="page"{% endif %}>
+        brought to you in 2026</a></li>
+      <li><a href="https://github.com/lee0c/eleventy-tina">
+        source</a></li>
     </ul>
   </nav>
-  {% endif %}
 </footer>

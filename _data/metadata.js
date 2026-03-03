@@ -5,7 +5,5 @@ export default {
 	description: config.metadata.description,
 	url: config.metadata.url,
 	author: config.metadata.author,
-	topNav: config.topNav,
-	bottomNav: config.bottomNav,
 	fonts: config.fonts
 }
