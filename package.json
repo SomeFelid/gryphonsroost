@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tinacms dev -c \"npx @11ty/eleventy --serve --quiet\"",
-    "build": "tinacms build && npx @11ty/eleventy --quiet"
+    "dev": "./cleanup.sh && npx tinacms dev -c \"npx @11ty/eleventy --serve --quiet\"",
+    "build": "./cleanup.sh && tinacms build && npx @11ty/eleventy --quiet"
   },
   "keywords": [],
   "author": "",
