@@ -1,8 +1,14 @@
 {% if postlist.length %}
-<ol>
+<ol class="postlist">
   {% for post in postlist %}
-  <li>
-    <a href="{{ post.url }}">{{ post.data.title }}</a>
+  <li class="post">
+    <a href="{{ post.url }}">
+      <h2>{{ post.data.title }}</h2>
+      {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
+      {% if post.data.hero.image and post.data.hero.alt %}
+        <img src="{{ post.data.hero.image }}" alt="{{ post.data.hero.alt }}">
+      {% endif %}
+    </a>
   </li>
   {% endfor %}
 </ol>

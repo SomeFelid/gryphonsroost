@@ -1,6 +1,6 @@
 ---
 title: style test
-description: this has a description now!
+description: ''
 hero:
   image: /public/DSCF4704.JPG
   alt: sparrow on a branch

@@ -182,7 +182,6 @@ export default defineConfig({
 						type: "string",
 						name: "description",
 						label: "Description",
-						description: "this is used for SEO/link preview purposes only."
 					},
 					{
 						type: "object",

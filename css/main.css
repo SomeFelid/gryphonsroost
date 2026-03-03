@@ -100,31 +100,6 @@ main ul, main ol {
 	padding: 1.5rem 1rem 1.5rem 3rem;
 }
 
-/* Lines from https://codepen.io/pouretrebelle/pen/kxWemn */
-main p,
-main ul, main ol,
-table {
-	background-color: var(--color-bg-alt);
-	background-image:
-		repeating-linear-gradient(
-			transparent,
-			transparent calc(1.5rem - 1px),
-			hsl(from var(--color-text) h s l / 50%) calc(1.5rem - 1px),
-			hsl(from var(--color-text) h s l / 50%) 100%);
-	background-clip: border-box;
-	background-position: 0 calc(0px - 1.5rem / 6);
-	background-size: 1px 1.5rem;
-}
-
-p:not(:has(img)) + p,
-p + ul, p + ol {
-	padding-top: 0;
-}
-
-p:has(img) + p {
-	margin-top: 1rem;
-}
-
 a {
 	color: var(--color-text);
 	text-underline-offset: var(--underline-thickness);
