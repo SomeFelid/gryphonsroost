@@ -28,4 +28,9 @@ export default function(eleventyConfig) {
 		out += "display=swap";
 		return out;
 	});
+
+	/* Remove parentheses, spaces, or dashes from a telephone number */
+	eleventyConfig.addFilter("telephoneNormalization", (tel) => {
+		return tel.replace("(", "").replace(")", "").replace("-", "").replace(" ", "");
+	});
 }

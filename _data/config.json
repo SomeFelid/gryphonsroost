@@ -10,5 +10,26 @@
     "headerFallback": "serif",
     "body": "Roboto Condensed",
     "bodyFallback": "sans-serif"
-  }
+  },
+  "contacts": [
+    {
+      "title": "email me",
+      "type": "email",
+      "value": "example@example.com"
+    },
+    {
+      "title": "call me",
+      "type": "telephone",
+      "value": "123-456-7890"
+    },
+    {
+      "title": "website",
+      "type": "link",
+      "value": "https://example.com"
+    },
+    {
+      "title": "discord",
+      "type": "text"
+    }
+  ]
 }

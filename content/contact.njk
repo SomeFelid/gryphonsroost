@@ -1,0 +1,22 @@
+---
+title: contact
+layout: page.njk
+---
+
+{% if metadata.contacts.length %}
+<ul>
+{% for contact in metadata.contacts %}
+  <li>
+    {% if contact.type == "email" and contact.value %}
+      <a href="mailto:{{ contact.value }}">{{ contact.title }}</a>
+    {% elif contact.type == "link" and contact.value %}
+      <a href="{{ contact.value }}">{{ contact.title }}</a>
+    {% elif contact.type == "telephone" and contact.value %}
+      <a href="tel:+1{{ contact.value | telephoneNormalization }}">{{ contact.title }}</a>
+    {% elif contact.type == "text" %}
+      {{ contact.title }}
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% endif %}

@@ -5,5 +5,6 @@ export default {
 	description: config.metadata.description,
 	url: config.metadata.url,
 	author: config.metadata.author,
-	fonts: config.fonts
+	fonts: config.fonts,
+	contacts: config.contacts
 }

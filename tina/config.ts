@@ -121,6 +121,45 @@ export default defineConfig({
 							},
 						]
 					},
+					{
+						name: "contacts",
+						label: "Contact information",
+						type: "object",
+						list: true,
+						ui: {
+							itemProps: (item) => {
+								return { label: item?.title };
+							},
+						},
+						fields: [
+							{
+								name: "title",
+								label: "Contact text",
+								type: "string",
+								required: true
+							},
+							{
+								name: "type",
+								label: "Contact type",
+								type: "string",
+								required: true,
+								options: [
+									{ label: "email", value: "email" },
+									{ label: "telephone", value: "telephone" },
+									{ label: "link", value: "link" },
+									{ label: "plain text", value: "text" },
+								],
+								ui: {
+									component: "radio-group"
+								}
+							},
+							{
+								name: "value",
+								label: "Contact value (email, link, etc)",
+								type: "string"
+							}
+						]
+					},
 				]
 			},
 			{
