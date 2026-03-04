@@ -13,6 +13,11 @@
 	}
 }
 
+.home.hero {
+	max-width: 600px;
+	width: 100%;
+}
+
 .highlights-header {
 	text-align: center;
 	background-color: transparent;
