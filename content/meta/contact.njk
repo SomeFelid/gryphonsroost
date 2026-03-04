@@ -5,7 +5,7 @@ permalink: contact/
 ---
 
 {% if metadata.contacts.length %}
-<ul>
+<ul class="contacts">
 {% for contact in metadata.contacts %}
   <li>
     {% if contact.type == "email" and contact.value %}
