@@ -20,23 +20,14 @@
   },
   "contacts": [
     {
-      "title": "email me",
+      "title": "gryphonsroost@proton.me",
       "type": "email",
-      "value": "example@example.com"
+      "value": "gryphonsroost@proton.me"
     },
     {
-      "title": "call me",
-      "type": "telephone",
-      "value": "123-456-7890"
-    },
-    {
-      "title": "website",
+      "title": "find me on the fediverse",
       "type": "link",
-      "value": "https://example.com"
-    },
-    {
-      "title": "discord",
-      "type": "text"
+      "value": "https://wandering.shop/@gryphonEschmidt"
     }
   ]
 }
