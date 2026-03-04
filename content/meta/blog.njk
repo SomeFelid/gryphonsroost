@@ -9,5 +9,5 @@ layout: listpage.njk
 eleventyComputed:
   permalink: /blog/{% if pagination.pageNumber %}{{ pagination.pageNumber }}/{% endif %}
 ---
-
+<p class="subtitle">(or <a href="/tags/">browse by tags</a>)</p>
 {% include "postlist.njk" %}

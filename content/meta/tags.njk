@@ -1,5 +1,17 @@
 ---
-layout: listpage.njk
+layout: page.njk
 permalink: tags/
 title: All Tags
 ---
+
+<ul class="taglist">
+  {% for tag in collections | getKeys | removeBasicTags | sortAlphabetically %}
+  {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+  <li>
+    <a href="{{ tagUrl }}">
+      <h2>{{ tag }}</h2>
+      <p>{{ collections[tag].length }} posts</p>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

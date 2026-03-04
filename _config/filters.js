@@ -1,6 +1,11 @@
 import { DateTime } from "luxon";
 
 export default function(eleventyConfig) {
+	// Return the keys used in an object
+	eleventyConfig.addFilter("getKeys", target => {
+		return Object.keys(target);
+	});
+
 	/* For <time> elements */
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat('yyyy-LL-dd');
@@ -14,7 +19,7 @@ export default function(eleventyConfig) {
 
 	/* Filter out structural tags */
 	eleventyConfig.addFilter("removeBasicTags", (tags) => {
-		return tags.filter(tag => ["posts"].indexOf(tag) === -1);
+		return tags.filter(tag => ["all", "posts", "tagPagination"].indexOf(tag) === -1);
 	});
 
 	/* Create a font fetch string out of font names */
@@ -30,6 +35,11 @@ export default function(eleventyConfig) {
 		out += "display=swap";
 		return out;
 	});
+
+	/* What it says on the tin */
+	eleventyConfig.addFilter("sortAlphabetically", strings =>
+		(strings || []).sort((b, a) => b.localeCompare(a))
+	);
 
 	/* Remove parentheses, spaces, or dashes from a telephone number */
 	eleventyConfig.addFilter("telephoneNormalization", (tel) => {

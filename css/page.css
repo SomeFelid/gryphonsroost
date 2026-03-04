@@ -1,0 +1,71 @@
+/* Tags page */
+.taglist {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+	list-style: none;
+	text-align: center;
+	padding-left: 1rem;
+	background-image: none;
+	background-color: transparent;
+}
+
+@media (max-width: 1050px) {
+	.taglist {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 650px) {
+	.taglist {
+		grid-template-columns: 1fr;
+		padding: 1.5rem .5rem;
+	}
+}
+
+.taglist a {
+	text-decoration: none;
+	display: block;
+}
+
+.taglist a:focus-visible {
+	border-radius: .025rem;
+	outline: solid var(--color-text-body);
+}
+
+.taglist h2,
+.taglist p {
+	border-right: .5rem solid transparent;
+	border-left: .5rem solid transparent;
+}
+
+@media (any-hover: hover) {
+	.taglist a:hover h2,
+	.taglist a:hover p {
+		border-right-color: var(--color-text-body);
+		border-left-color: var(--color-text-body);
+	}
+}
+
+
+.taglist h2 {
+	font-size: 2rem;
+	padding: .75rem 0 0;
+	text-decoration: underline solid var(--underline-thickness) var(--color-text-header);
+	margin-top: 0;
+}
+
+.taglist p {
+	padding-bottom: .75rem;
+}
+
+/* Contact page */
+.contacts {
+	display: flex;
+	list-style: none;
+	column-gap: 5rem;
+	justify-content: space-around;
+	row-gap: 1.5rem;
+	flex-flow: row wrap;
+	padding-left: 1rem;
+}
