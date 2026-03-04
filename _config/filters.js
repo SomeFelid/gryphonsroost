@@ -33,4 +33,9 @@ export default function(eleventyConfig) {
 	eleventyConfig.addFilter("telephoneNormalization", (tel) => {
 		return tel.replace("(", "").replace(")", "").replace("-", "").replace(" ", "");
 	});
+
+	/* Strip page number off a path */
+	eleventyConfig.addFilter("stripPageNumber", (path) => {
+		return path.replace(/[0-9]\//g, "");
+	});
 }

@@ -27,7 +27,7 @@ header a {
 	border-right: solid var(--color-bg);
 }
 
-header a[aria-current="page"] {
+header a[data-current-section="true"] {
 	background-color: var(--color-bg);
 }
 
@@ -37,7 +37,7 @@ header a[aria-current="page"] {
 		border-color: var(--color-text-alt);
 	}
 
-	header a[aria-current="page"]:hover {
+	header a[data-current-section="true"]:hover {
 		border-color: var(--color-text);
 	}
 }
@@ -47,7 +47,7 @@ header a:focus-visible {
 	outline: none;
 }
 
-header a[aria-current="page"]:focus-visible {
+header a[data-current-section="true"]:focus-visible {
 	border-color: var(--color-text);
 }
 
@@ -100,12 +100,12 @@ header ul {
 	}
 
 	/* This selector means "the home page is the current page" */
-	header:has(a[aria-current="page"][href="/"]) nav {
+	header:has(a[data-current-section="true"][href="/"]) nav {
 		grid-area: row1;
 		width: 100%;
 	}
 
-	header:has(a[aria-current="page"][href="/"]) > a {
+	header:has(a[data-current-section="true"][href="/"]) > a {
 		grid-area: row2;
 	}
 
@@ -115,12 +115,12 @@ header ul {
 		justify-self: center;
 	}
 
-	header:not(:has(a[aria-current="page"][href="/"])) #skip:focus-visible {
+	header:not(:has(a[data-current-section="true"][href="/"])) #skip:focus-visible {
 		grid-area: row1;
 		background-color: var(--color-bg-alt);
 	}
 
-	header:has(a[aria-current="page"][href="/"]) #skip:focus-visible {
+	header:has(a[data-current-section="true"][href="/"]) #skip:focus-visible {
 		grid-area: row2;
 		align-self: end;
 	}
