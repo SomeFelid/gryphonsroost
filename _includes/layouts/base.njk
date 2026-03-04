@@ -14,6 +14,7 @@
     <meta property="og:site_name" content="{{ metadata.title }}" />
 
     <!-- Style -->
+    <style>{% include "css/colors.css" %}</style>
     <style>
       :root {
         --font-family-header:
@@ -31,16 +32,7 @@
         --nav-padding: .25rem;
         {% endif %}
 
-        --color-dark-text-body: {{ metadata.colors.darkTextBody }};
-        --color-dark-text-header: {{ metadata.colors.darkTextHeader }};
-        --color-dark1: {{ metadata.colors.dark1 }};
-        --color-dark2: {{ metadata.colors.dark2 }};
-        --color-dark3: {{ metadata.colors.dark3 }};
-        --color-light-text-body: {{ metadata.colors.lightTextBody }};
-        --color-light-text-body: {{ metadata.colors.lightTextHeader }};
-        --color-light1: {{ metadata.colors.light1 }};
-        --color-light2: {{ metadata.colors.light2 }};
-        --color-light3: {{ metadata.colors.light3 }};
+        {% include "colors.njk" %}
       }
     </style>
     <style>{% include "css/main.css" %}</style>

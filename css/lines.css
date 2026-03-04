@@ -2,7 +2,7 @@
 main p,
 main ul, main ol,
 table {
-	background-color: var(--color-bg-alt);
+	background-color: var(--color-bg-blocks);
 	background-image:
 		repeating-linear-gradient(
 			transparent,

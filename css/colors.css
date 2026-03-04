@@ -1,0 +1,71 @@
+:root {
+	/* Drab light */
+	--color-drab-light-text-body: #3e3f29;
+	--color-drab-light-text-header: #525b3c;
+	--color-drab-light-bg: #7d8d86;
+	--color-drab-light-bg-folder: #f1f0e4;
+	--color-drab-light-bg-blocks: #bca88d;
+
+	/* Drab dark */
+	--color-drab-dark-text-body: #f1f0e4;
+	--color-drab-dark-text-header: #bca88d;
+	--color-drab-dark-bg: #7d8d86;
+	--color-drab-dark-bg-folder: #3e3f29;
+	--color-drab-dark-bg-blocks: #525b3c;
+
+	/* Sunset light */
+	--color-sunset-light-text-body: #2d184c;
+	--color-sunset-light-text-header: #552648;
+	--color-sunset-light-bg: #824d74;
+	--color-sunset-light-bg-folder: #fdaf7b;
+	--color-sunset-light-bg-blocks: #be7b72;
+
+	/* Sunset dark */
+	--color-sunset-dark-text-body: #fdaf7b;
+	--color-sunset-dark-text-header: #be7b72;
+	--color-sunset-dark-bg: #824d74;
+	--color-sunset-dark-bg-folder: #2d184c;
+	--color-sunset-dark-bg-blocks: #552648;
+
+	/* Beach light */
+	--color-beach-light-text-body: #1d3940;
+	--color-beach-light-text-header: #88603f;
+	--color-beach-light-bg: #d9c4b0;
+	--color-beach-light-bg-folder: #bbdce5;
+	--color-beach-light-bg-blocks: #eceedf;
+
+	/* Beach dark */
+	--color-beach-dark-text-body: #d6e4ff;
+	--color-beach-dark-text-header: #ecdf4a;
+	--color-beach-dark-bg: #577bc1;
+	--color-beach-dark-bg-folder: #000957;
+	--color-beach-dark-bg-blocks: #344cb7;
+
+	/* Bisexual dark */
+	--color-bisexual-dark-text-body: #c1c4f6;
+	--color-bisexual-dark-text-header: #cb44a1;
+	--color-bisexual-dark-bg: #720455;
+	--color-bisexual-dark-bg-folder: #030637;
+	--color-bisexual-dark-bg-blocks: #3c0753;
+
+	/* Mustard dark */
+	--color-mustard-dark-text-body: #d0c9bf;
+	--color-mustard-dark-text-header: #c69749;
+	--color-mustard-dark-bg: #735f32;
+	--color-mustard-dark-bg-folder: #282a3a;
+	--color-mustard-dark-bg-blocks: #454862;
+
+	/* OG light */
+	--color-og-light-text-body: #212226;
+	--color-og-light-text-header: #293534;
+	--color-og-light-bg: #48644c;
+	--color-og-light-bg-folder: #69966e;
+	--color-og-light-bg-blocks: #93b896;
+
+	/* OG dark */
+	--color-og-dark-text-body: #eadfc6;
+	--color-og-dark-text-header: #cebc95;
+	--color-og-dark-bg: #48644c;
+	--color-og-dark-bg-folder: #17201f;
+	--color-og-dark-bg-blocks: #233d3a;
+}

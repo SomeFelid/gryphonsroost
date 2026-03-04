@@ -3,9 +3,9 @@
 
 	--color-text-body: light-dark(var(--color-light-text-body), var(--color-dark-text-body));
 	--color-text-header: light-dark(var(--color-light-text-header), var(--color-dark-text-header));
-	--color-bg: light-dark(var(--color-light1), var(--color-dark1));
-	--color-bg-alt: light-dark(var(--color-light3), var(--color-dark3));
-	--color-bg-body: light-dark(var(--color-light2), var(--color-dark2));
+	--color-bg-folder: light-dark(var(--color-light-bg-folder), var(--color-dark-bg-folder));
+	--color-bg-blocks: light-dark(var(--color-light-bg-blocks), var(--color-dark-bg-blocks));
+	--color-bg: light-dark(var(--color-light-bg), var(--color-dark-bg));
 
 	--underline-thickness: .18em;
 }
@@ -18,7 +18,7 @@
 
 body {
 	color: var(--color-text-body);
-	background-color: var(--color-bg-body);
+	background-color: var(--color-bg);
 	font-family: var(--font-family-body);
 	width: 60vw;
 	max-width: 1200px;
@@ -38,7 +38,7 @@ body {
 }
 
 main {
-	background-color: var(--color-bg);
+	background-color: var(--color-bg-folder);
 	padding-bottom: 2rem;
 }
 
@@ -72,7 +72,7 @@ h5 { font-size: 1.4rem; }
 h6 { font-size: 1.25rem; }
 
 h2, h3, h4, h5, h6 {
-	background-color: var(--color-bg-alt);
+	background-color: var(--color-bg-blocks);
 	margin-top: .8em;
 }
 
@@ -136,7 +136,7 @@ hr {
 
 pre {
 	padding: 1rem;
-	border: thick solid var(--color-bg-alt);
+	border: thick solid var(--color-bg-blocks);
 	white-space: pre-wrap;
 	word-break: break-word;
 	overflow-wrap: break-word;
@@ -146,11 +146,11 @@ pre {
 table {
 	width: 100%;
 	border-spacing: 0;
-	border: thick solid var(--color-bg-alt);
+	border: thick solid var(--color-bg-blocks);
 }
 
 th {
-	background-color: var(--color-bg);
+	background-color: var(--color-bg-folder);
 	vertical-align: bottom;
 }
 

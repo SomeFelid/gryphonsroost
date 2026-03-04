@@ -160,114 +160,144 @@ export default defineConfig({
 						required: true,
 						fields: [
 							{
-								name: "dark2",
-								label: "Dark mode background",
+								name: "darkPalette",
+								label: "Dark mode palette",
 								type: "string",
 								required: true,
 								ui: {
-									component: "color",
-									colors: ["#1d2c2a", "#190b23"],
-									widget: "sketch",
-								}
+									component: "select",
+								},
+								options: [
+									{ label: "Olive drab", value: "drab" },
+									{ label: "Sunset", value: "sunset" },
+									{ label: "Beach", value: "beach" },
+									{ label: "Bisexual", value: "bisexual" },
+									{ label: "Mustard", value: "mustard" },
+									{ label: "OG (original green)", value: "green" },
+									{ label: "Custom", value: "custom" }
+								]
 							},
 							{
-								name: "dark1",
-								label: "Dark mode folder",
+								name: "lightPalette",
+								label: "Light mode palette",
 								type: "string",
 								required: true,
 								ui: {
-									component: "color",
-									colors: ["#17201f", "#090b1e"],
-									widget: "sketch",
-								}
+									component: "select",
+								},
+								options: [
+									{ label: "Olive drab", value: "drab" },
+									{ label: "Sunset", value: "sunset" },
+									{ label: "Beach", value: "beach" },
+									{ label: "OG (original green)", value: "green" },
+									{ label: "Custom", value: "custom" }
+								]
 							},
 							{
-								name: "dark3",
-								label: "Dark mode text blocks",
-								type: "string",
-								required: true,
-								ui: {
-									component: "color",
-									colors: ["#233d3a", "#2e0d2b"],
-									widget: "sketch",
-								}
+								name: "customDark",
+								label: "Custom color scheme for dark mode",
+								description: "Create this if you chose 'custom' for dark mode palette above",
+								type: "object",
+								fields: [
+									{
+										name: "bg",
+										label: "Background",
+										type: "string",
+										ui: {
+											component: "color",
+											widget: "sketch",
+										}
+									},
+									{
+										name: "bgFolder",
+										label: "Folder",
+										type: "string",
+										ui: {
+											component: "color",
+											widget: "sketch",
+										}
+									},
+									{
+										name: "bgBlocks",
+										label: "Text blocks",
+										type: "string",
+										ui: {
+											component: "color",
+											widget: "sketch",
+										}
+									},
+									{
+										name: "textBody",
+										label: "Body text",
+										type: "string",
+										ui: {
+											component: "color",
+											widget: "sketch",
+										}
+									},
+									{
+										name: "textHeader",
+										label: "Header text",
+										type: "string",
+										ui: {
+											component: "color",
+											widget: "sketch",
+										}
+									},
+								]
 							},
 							{
-								name: "darkTextBody",
-								label: "Dark mode text (body)",
-								type: "string",
-								required: true,
-								ui: {
-									component: "color",
-									colors: ["#eadfc6", "#becfff"],
-									widget: "sketch",
-								}
-							},
-							{
-								name: "darkTextHeader",
-								label: "Dark mode text (headers)",
-								type: "string",
-								required: true,
-								ui: {
-									component: "color",
-									colors: ["#eadfc6", "#a8beff"],
-									widget: "sketch",
-								}
-							},
-							{
-								name: "light2",
-								label: "Light mode background",
-								type: "string",
-								required: true,
-								ui: {
-									component: "color",
-									colors: ["#93b896", "#fee1bd"],
-									widget: "sketch",
-								}
-							},
-							{
-								name: "light1",
-								label: "Light mode folder",
-								type: "string",
-								required: true,
-								ui: {
-									component: "color",
-									colors: ["#69966e", "#b7d0ea"],
-									widget: "sketch",
-								}
-							},
-							{
-								name: "light3",
-								label: "Light mode text blocks",
-								type: "string",
-								required: true,
-								ui: {
-									component: "color",
-									colors: ["#a6c9a8", "#fff1c2"],
-									widget: "sketch",
-								}
-							},
-							{
-								name: "lightTextBody",
-								label: "Light mode text (body)",
-								type: "string",
-								required: true,
-								ui: {
-									component: "color",
-									colors: ["#212226", "#152333"],
-									widget: "sketch",
-								}
-							},
-							{
-								name: "lightTextHeader",
-								label: "Light mode text (headers)",
-								type: "string",
-								required: true,
-								ui: {
-									component: "color",
-									colors: ["#212226", "#183350"],
-									widget: "sketch",
-								}
+								name: "customLight",
+								label: "Custom color scheme for light mode",
+								description: "Create this if you chose 'custom' for light mode palette above",
+								type: "object",
+								fields: [
+									{
+										name: "bg",
+										label: "Background",
+										type: "string",
+										ui: {
+											component: "color",
+											widget: "sketch",
+										}
+									},
+									{
+										name: "bgFolder",
+										label: "Folder",
+										type: "string",
+										ui: {
+											component: "color",
+											widget: "sketch",
+										}
+									},
+									{
+										name: "bgBlocks",
+										label: "Text blocks",
+										type: "string",
+										ui: {
+											component: "color",
+											widget: "sketch",
+										}
+									},
+									{
+										name: "textBody",
+										label: "Body text",
+										type: "string",
+										ui: {
+											component: "color",
+											widget: "sketch",
+										}
+									},
+									{
+										name: "textHeader",
+										label: "Header text",
+										type: "string",
+										ui: {
+											component: "color",
+											widget: "sketch",
+										}
+									},
+								]
 							},
 						]
 					},

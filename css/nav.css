@@ -19,7 +19,7 @@ header {
 }
 
 header a {
-	background-color: var(--color-bg-alt);
+	background-color: var(--color-bg-blocks);
 	padding-left: 1rem;
 	padding-right: 1rem;
 	padding-top: var(--nav-padding);
@@ -27,14 +27,14 @@ header a {
 	display: block;
 	text-decoration: none;
 	border-radius: .5rem .5rem 0 0;
-	border-left: solid var(--color-bg);
-	border-top: solid var(--color-bg);
-	border-right: solid var(--color-bg);
+	border-left: solid var(--color-bg-folder);
+	border-top: solid var(--color-bg-folder);
+	border-right: solid var(--color-bg-folder);
 	letter-spacing: .1rem;
 }
 
 header a[data-current-section="true"] {
-	background-color: var(--color-bg);
+	background-color: var(--color-bg-folder);
 }
 
 /* Hover and focus for header */
@@ -58,12 +58,12 @@ header a[data-current-section="true"]:focus-visible {
 }
 
 header a:active {
-	border-color: var(--color-bg);
+	border-color: var(--color-bg-folder);
 }
 
 /* Skip link */
 #skip {
-	background-color: var(--color-bg);
+	background-color: var(--color-bg-folder);
 	left: -999px;
 	position: absolute;
 	top: auto;
@@ -123,7 +123,7 @@ header ul {
 
 	header:not(:has(a[data-current-section="true"][href="/"])) #skip:focus-visible {
 		grid-area: row1;
-		background-color: var(--color-bg-alt);
+		background-color: var(--color-bg-blocks);
 	}
 
 	header:has(a[data-current-section="true"][href="/"]) #skip:focus-visible {
@@ -133,12 +133,12 @@ header ul {
 
 	header:has(nav) .folder-background {
 		grid-area: row2;
-		background-color: var(--color-bg-alt);
+		background-color: var(--color-bg-blocks);
 		height: calc(var(--tab-height) * 1.25);
 		width: 100%;
 		z-index: -1;
-		border-left: solid var(--color-bg);
-		border-right: solid var(--color-bg);
+		border-left: solid var(--color-bg-folder);
+		border-right: solid var(--color-bg-folder);
 	}
 
 	header ul {
@@ -150,7 +150,7 @@ header ul {
 /* Footer */
 footer {
 	padding: 1rem;
-	background-color: var(--color-bg);
+	background-color: var(--color-bg-folder);
 	border-radius: 0 0 .5rem .5rem;
 	font-size: .9rem;
 	line-height: 1.5;

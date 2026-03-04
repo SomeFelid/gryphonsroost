@@ -1,0 +1,71 @@
+--color-light-text-body:
+  {% if metadata.colors.lightPalette == "drab" %}var(--color-drab-light-text-body)
+  {% elif metadata.colors.lightPalette == "sunset" %}var(--color-sunset-light-text-body)
+  {% elif metadata.colors.lightPalette == "beach" %}var(--color-beach-light-text-body)
+  {% elif metadata.colors.lightPalette == "og" %}var(--color-og-light-text-body)
+  {% elif metadata.colors.lightPalette == "custom" %}{{ metadata.colors.customLight.textBody }}
+  {% endif %};
+--color-light-text-header:
+  {% if metadata.colors.lightPalette == "drab" %}var(--color-drab-light-text-header)
+  {% elif metadata.colors.lightPalette == "sunset" %}var(--color-sunset-light-text-header)
+  {% elif metadata.colors.lightPalette == "beach" %}var(--color-beach-light-text-header)
+  {% elif metadata.colors.lightPalette == "og" %}var(--color-og-light-text-header)
+  {% elif metadata.colors.lightPalette == "custom" %}{{ metadata.colors.customLight.textHeader }}
+  {% endif %};
+--color-light-bg:
+  {% if metadata.colors.lightPalette == "drab" %}var(--color-drab-light-bg)
+  {% elif metadata.colors.lightPalette == "sunset" %}var(--color-sunset-light-bg)
+  {% elif metadata.colors.lightPalette == "beach" %}var(--color-beach-light-bg)
+  {% elif metadata.colors.lightPalette == "og" %}var(--color-og-light-bg)
+  {% elif metadata.colors.lightPalette == "custom" %}{{ metadata.colors.customLight.bg }}
+  {% endif %};
+--color-light-bg-folder:
+  {% if metadata.colors.lightPalette == "drab" %}var(--color-drab-light-bg-folder)
+  {% elif metadata.colors.lightPalette == "sunset" %}var(--color-sunset-light-bg-folder)
+  {% elif metadata.colors.lightPalette == "beach" %}var(--color-beach-light-bg-folder)
+  {% elif metadata.colors.lightPalette == "og" %}var(--color-og-light-bg-folder)
+  {% elif metadata.colors.lightPalette == "custom" %}{{ metadata.colors.customLight.bgFolder }}
+  {% endif %};
+--color-light-bg-blocks:
+  {% if metadata.colors.lightPalette == "drab" %}var(--color-drab-light-bg-blocks)
+  {% elif metadata.colors.lightPalette == "sunset" %}var(--color-sunset-light-bg-blocks)
+  {% elif metadata.colors.lightPalette == "beach" %}var(--color-beach-light-bg-blocks)
+  {% elif metadata.colors.lightPalette == "og" %}var(--color-og-light-bg-blocks)
+  {% elif metadata.colors.lightPalette == "custom" %}{{ metadata.colors.customLight.bgBlocks }}
+  {% endif %};
+
+--color-dark-text-body:
+  {% if metadata.colors.darkPalette == "drab" %}var(--color-drab-dark-text-body)
+  {% elif metadata.colors.darkPalette == "sunset" %}var(--color-sunset-dark-text-body)
+  {% elif metadata.colors.darkPalette == "beach" %}var(--color-beach-dark-text-body)
+  {% elif metadata.colors.darkPalette == "og" %}var(--color-og-dark-text-body)
+  {% elif metadata.colors.darkPalette == "custom" %}{{ metadata.colors.customDark.textBody }}
+  {% endif %};
+--color-dark-text-header:
+  {% if metadata.colors.darkPalette == "drab" %}var(--color-drab-dark-text-header)
+  {% elif metadata.colors.darkPalette == "sunset" %}var(--color-sunset-dark-text-header)
+  {% elif metadata.colors.darkPalette == "beach" %}var(--color-beach-dark-text-header)
+  {% elif metadata.colors.darkPalette == "og" %}var(--color-og-dark-text-header)
+  {% elif metadata.colors.darkPalette == "custom" %}{{ metadata.colors.customDark.textHeader }}
+  {% endif %};
+--color-dark-bg:
+  {% if metadata.colors.darkPalette == "drab" %}var(--color-drab-dark-bg)
+  {% elif metadata.colors.darkPalette == "sunset" %}var(--color-sunset-dark-bg)
+  {% elif metadata.colors.darkPalette == "beach" %}var(--color-beach-dark-bg)
+  {% elif metadata.colors.darkPalette == "og" %}var(--color-og-dark-bg)
+  {% elif metadata.colors.darkPalette == "custom" %}{{ metadata.colors.customDark.bg }}
+  {% endif %};
+--color-dark-bg-folder:
+  {% if metadata.colors.darkPalette == "drab" %}var(--color-drab-dark-bg-folder)
+  {% elif metadata.colors.darkPalette == "sunset" %}var(--color-sunset-dark-bg-folder)
+  {% elif metadata.colors.darkPalette == "beach" %}var(--color-beach-dark-bg-folder)
+  {% elif metadata.colors.darkPalette == "og" %}var(--color-og-dark-bg-folder)
+  {% elif metadata.colors.darkPalette == "custom" %}{{ metadata.colors.customDark.bgFolder }}
+  {% endif %};
+--color-dark-bg-blocks:
+  {% if metadata.colors.darkPalette == "drab" %}var(--color-drab-dark-bg-blocks)
+  {% elif metadata.colors.darkPalette == "sunset" %}var(--color-sunset-dark-bg-blocks)
+  {% elif metadata.colors.darkPalette == "beach" %}var(--color-beach-dark-bg-blocks)
+  {% elif metadata.colors.darkPalette == "og" %}var(--color-og-dark-bg-blocks)
+  {% elif metadata.colors.darkPalette == "custom" %}{{ metadata.colors.customDark.bgBlocks }}
+  {% endif %};

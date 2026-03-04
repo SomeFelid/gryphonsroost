@@ -4,7 +4,7 @@
 	justify-content: space-between;
 	padding: 1.5rem 1rem;
 	gap: 1.5rem;
-	background-color: var(--color-bg-alt);
+	background-color: var(--color-bg-blocks);
 	background-image:
 		repeating-linear-gradient(
 			transparent,

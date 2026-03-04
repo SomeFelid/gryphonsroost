@@ -15,16 +15,8 @@
     "navPadding": 0.4
   },
   "colors": {
-    "dark2": "#190B23",
-    "dark1": "#090B1E",
-    "dark3": "#2E0D2B",
-    "darkTextBody": "#BECFFF",
-    "darkTextHeader": "#A8BEFF",
-    "light2": "#FEE1BD",
-    "light1": "#B7D0EA",
-    "light3": "#FFF1C2",
-    "lightTextBody": "#152333",
-    "lightTextHeader": "#183350"
+    "darkPalette": "drab",
+    "lightPalette": "beach"
   },
   "contacts": [
     {

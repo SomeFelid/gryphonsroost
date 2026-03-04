@@ -1,13 +1,13 @@
 .postlist {
 	background-image: none;
-	background-color: var(--color-bg);
+	background-color: var(--color-bg-folder);
 	padding: 0;
 }
 
 .post {
 	list-style: none;
 	margin: 0;
-	background-color: var(--color-bg-alt);
+	background-color: var(--color-bg-blocks);
 	background-image:
 		repeating-linear-gradient(
 			transparent,
