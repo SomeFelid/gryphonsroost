@@ -28,6 +28,8 @@ layout: base.njk
 
   {% if hero.image and hero.alt %}
     <img class="hero" src="{{ hero.image }}" alt="{{ hero.alt }}">
+  {% else %}
+    <hr>
   {% endif %}
 
   {{ content | safe }}
