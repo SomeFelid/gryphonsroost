@@ -1,6 +1,6 @@
 ---
 layout: home.njk
-title: Home
+title: Gryphon's Roost
 subtitle: 'Official Site of Author, Artist, and All Around Creative'
 hero:
   image: /public/gryphon.JPG
