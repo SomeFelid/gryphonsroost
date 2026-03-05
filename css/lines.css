@@ -1,4 +1,8 @@
 /* Lines from https://codepen.io/pouretrebelle/pen/kxWemn */
+h2, h3, h4, h5, h6 {
+	background-color: var(--color-bg-blocks);
+}
+
 main p,
 main ul, main ol,
 table {
