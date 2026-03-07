@@ -13,10 +13,4 @@ Anyway, last month I submitted four of my art pieces to the [Dream Foundry 2024 
 
 This has been a good year for my art, and as I'd already had a few pieces I was quite proud of already finished, I decided to commit myself. I won't know if I've even placed in the finals for a while yet, and so I'm typing this so you must all wait with me in baited breath. What sort of art did I submit? I'm so glad you ask...
 
-![](/public/IMG_2417.JPG)
-
-![](/public/IMG_2421.JPG)
-
-![](/public/IMG_2418.JPG)
-
-![](/public/IMG_2420.JPG)
+![](/public/IMG_2417.JPG)![](/public/IMG_2421.JPG)![](/public/IMG_2418.JPG)![](/public/IMG_2420.JPG)

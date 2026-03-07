@@ -32,6 +32,10 @@ p img {
 	margin-bottom: 0;
 }
 
+p img + img {
+	margin-top: 1rem;
+}
+
 p.small {
 	padding-top: .25rem;
 }

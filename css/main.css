@@ -87,6 +87,12 @@ p img {
 	max-width: 60%;
 }
 
+@media (max-width: 650px) {
+	p img {
+		max-width: 100%;
+	}
+}
+
 main p,
 main ul, main ol,
 main table {
