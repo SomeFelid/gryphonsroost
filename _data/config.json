@@ -8,9 +8,9 @@
   "fonts": {
     "header": "Fredericka the Great",
     "headerFallback": "sans-serif",
-    "body": "Noto Serif",
-    "bodyFallback": "serif",
-    "nav": "Roboto",
+    "body": "Atkinson Hyperlegible Next",
+    "bodyFallback": "sans-serif",
+    "nav": "Atkinson Hyperlegible Next",
     "navFallback": "sans-serif",
     "navPadding": 0.4
   },
