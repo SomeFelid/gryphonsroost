@@ -4,6 +4,7 @@ date: 2026-03-02T03:42:55.655Z
 description: 'Current WIP - A M/M Fantasy, Romance, and Mystery Novel that will feature themes such as family, trust, responsibility, and love.'
 hero:
   image: /public/IMG_2429.JPG
+  alt: a photomanipulation of a crow standing on a stone wall with a semi transparent overlay of some flowers. images used under fair use from their respective stock websites
 tags:
   - wip
   - fantasy
