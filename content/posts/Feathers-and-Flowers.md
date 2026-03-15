@@ -5,7 +5,6 @@ description: 'Current WIP - A M/M Fantasy, Romance, and Mystery Novel that will 
 hero:
   image: /public/IMG_2429.JPG
 tags:
-  - highlight
   - wip
   - fantasy
   - scereland
