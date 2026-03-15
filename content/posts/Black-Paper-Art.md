@@ -7,5 +7,7 @@ hero:
   alt: A work of visual art. Black paper base with pink lines forming an abstract image of a face with speech bubbles coming from the mouth. The negitive space from the face and the bubbles is filled with repeating horizonal lines.
 tags:
   - art
+  - black paper
+  - highlight
 ---
 
