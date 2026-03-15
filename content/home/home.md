@@ -1,7 +1,7 @@
 ---
 layout: home.njk
 title: Gryphons Roost
-subtitle: 'Official Site of Author, Artist, and All Around Creative'
+subtitle: 'Official Site of Author, Artist, and All Around Creative: Gryphon E. Schmidt'
 hero:
   image: ''
   alt: ''
