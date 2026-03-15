@@ -1,6 +1,6 @@
 ---
 title: Feathers and Flowers
-date: 2026-03-02T03:42:55.655Z
+date: 2025-03-02T03:42:55.655Z
 description: 'Current WIP - A M/M Fantasy, Romance, and Mystery Novel that will feature themes such as family, trust, responsibility, and love.'
 hero:
   image: /public/IMG_2429.JPG
