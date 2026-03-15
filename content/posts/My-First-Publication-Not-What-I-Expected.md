@@ -5,6 +5,10 @@ description: 'If this doesn''t look like a book cover, that would be because it 
 hero:
   image: /public/IMG_2419.JPG
   alt: A spooky house sits in front of tarot cards. The text reads "S.Y.I.A.E.S.L. So! You Inherited An Evil Science Lair." Flasks and webs decorate.
+tags:
+  - game dev
+  - achievement
+  - publication
 ---
 
 When I started this website, this blog, it was more or a less a sign to myself and the world that I was taking my creative life 'more seriously'. Not that I intended to take the fun, the creativity, out of anything. Nor was I wanting to make this any significant sort of income, but in the sense that I was starting to work on projects that I could really see putting in front of an audience.
