@@ -1,7 +1,7 @@
 ---
 title: Birth of the Prophet
-date: 2026-03-05T03:49:33.594Z
-description: 'WIP #2, on hiatus'
+date: 2024-02-02T03:49:33.594Z
+description: 'My first ever completed novel first draft, on hiatus as of 2023'
 hero:
   image: /public/IMG_2431.JPG
 tags:
