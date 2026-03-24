@@ -12,3 +12,5 @@ Contents of works include but are not limited to - adventure, queer folks, drago
 Visual art should always have Alt text for screen readers, please get in touch if one seems to be missing or broken in any way.
 
 Gryphon is not currently open for art or writing commissions, but does have stickers and prints of their work available, please see the contacts page for email and [fediverse](https://en.wikipedia.org/wiki/Fediverse) contact options.
+
+\[Icon art credit to Houndpine]
